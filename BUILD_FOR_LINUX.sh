@@ -17,8 +17,9 @@ rm -rf ReleaseUpload
 electron-packager app Inky --platform=linux --arch=x64 --icon=resources/Icon.icns --extend-info=resources/info.plist --prune --asar.unpackDir="main-process/ink" --ignore="inklecate_mac"
 
 # Create a zip files ready for upload on Windows/Linux
-mkdir -p ReleaseUpload
-zip -r ReleaseUpload/Inky_linux.zip Inky-linux-x64
+# FIXME no zip CLI in EOS
+# mkdir -p ReleaseUpload
+# zip -r ReleaseUpload/Inky_linux.zip Inky-linux-x64
 
 #Prepare AppImage build structure
 mkdir -p AppImage/opt/inky
